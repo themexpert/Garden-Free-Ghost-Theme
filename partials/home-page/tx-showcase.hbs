@@ -1,0 +1,39 @@
+<section id="tx-hero-area"  {{#if @blog.cover}}style="background-image: url({{@blog.cover}});background-repeat:no-repeat;background-size:cover;"{{/if}}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="menu clearfix">
+					<ul class="nav nav-pills pull-right">
+						<li>
+							<a href="/about">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Typography
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tx-block">
+					<a class="logo" href="#">
+						<img src="{{@blog.logo}}" alt="">
+					</a>
+					<h1 class="at_subtitle">{{@blog.title}}</h1>
+					<p>{{@blog.description}}</p>
+
+					<a href="#tx-mainbody" class="tx-top-to-bottom">Continue<br> <i class="fa fa-angle-down"></i>  </a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+	
+	    

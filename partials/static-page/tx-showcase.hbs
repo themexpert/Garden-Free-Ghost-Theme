@@ -1,0 +1,23 @@
+<div id="tx-showcase">
+	<div class="tx-blog_cover" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+	    <div class="tx-showcase-overlay {{#if @blog.cover}}tx-with-blog-cover{{/if}}">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-center">
+				            {{#post}}
+				            <div class="tx-block">
+				                <article class="{{post_class}}">
+				                    <div class="tx-post_header">
+				                        <h2 class="tx-post_title">{{{title}}}</h2>
+				                    </div>
+				                </article>
+				            </div>
+				            {{/post}}
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+</div>

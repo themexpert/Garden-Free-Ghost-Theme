@@ -1,0 +1,32 @@
+<div id="tx-mainbody" role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{#foreach posts}}
+                    <article class="{{post_class}} ">
+                        <div class="tx-post-bg">{{content words="0"}}</div>
+                        <div class="block">
+                            <div class="tx-post-header">
+                                <h2 class="tx-post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                            </div>
+                            <div class="tx-post-meta">
+                                <span class="tx-post-author"><span class="fa fa-user"></span> {{author}}</span>
+                                <time class="tx-post-time" datetime="{{date format='YYYY-MM-DD'}}"><span class="fa fa-calendar"></span> {{date format="DD MMM YYYY"}}</time>
+                                <span class="tx-post-tag">{{#if tags}}<span class="fa fa-tags"></span>{{/if}} {{tags}}</span>
+                            </div>
+                            <div class="tx-post-excerpt">
+                                
+                                <p>{{excerpt characters="250"}}&hellip;</p>
+                                <a href="{{url}}" class="btn btn-primary btn-read">Read More</a>
+                            </div>
+                            
+                        </div>
+                    </article>
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{! Pagination }}
+{{pagination}}
