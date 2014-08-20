@@ -93,32 +93,68 @@ a {
 
 
 #tx-mainbody {
+    
     .post:nth-child(2n) .block {
         float:right;
     }
     .post:nth-child(4n+1) .block {
         background: rgba(227, 120, 41, 0.9);
-        .btn-read {
+        .read-button {
             background: #9e5721;
         }
     }
     .post:nth-child(4n+2) .block {
         background: rgba(22, 165, 215, 0.9);
-        .btn-read {
+        .read-button {
             background: #0c8097;
         }
     }
     .post:nth-child(4n+3) .block {
         background: rgba(18, 178, 74, 0.9);
-        .btn-read {
+        .read-button{
             background: #188e3a;
         }
     }
     .post:nth-child(4n+4) .block {
         background: rgba(191, 76, 176, 0.9);
-        .btn-read {
+        .read-button{
             background: #853575;
         }
+    }
+    .post {
+        .read-button {
+            border: 1px solid #dedede;
+            padding: 8px 10px;
+            margin-top: 20px;
+            color: #fff;
+            border:none;
+            position: relative;
+            z-index: 1;
+            -webkit-transition: .3s ;
+            -o-transition: .3s ;
+            transition: .3s ;
+                &::after {
+                    width: 0;
+                    height: 100%;
+                    position:absolute;
+                    z-index: -1;
+                    background: #fff;
+                    top: 0;
+                    left: 0;
+                    content: '';
+                    -webkit-transition: .3s ;
+                    -o-transition: .3s ;
+                    transition: .3s ;
+
+                }
+                &:hover:after {
+                    width: 100%;
+                }
+                &:hover {
+                    color: #000;
+                }
+
+            }
     }
     article.tag-only-post {
         .block {
@@ -182,6 +218,10 @@ a {
                 font-weight: 300;
                 .tx-post-author {
                     margin-right:100px;
+                    a {
+                        color: #fff;
+                        text-transform: capitalize;
+                    }
                 }
                 .tx-post-time {
                     margin-right: 50px;
@@ -201,6 +241,7 @@ a {
             .btn-read {
                 border:none;
                 border-radius: 0;
+                margin-top: 20px;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -335,3 +376,8 @@ a {
         }
     }
 }
+
+
+
+
+

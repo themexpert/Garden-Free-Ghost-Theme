@@ -85,26 +85,57 @@ a:hover {
 #tx-mainbody .post:nth-child(4n+1) .block {
   background: rgba(227, 120, 41, 0.9);
 }
-#tx-mainbody .post:nth-child(4n+1) .block .btn-read {
+#tx-mainbody .post:nth-child(4n+1) .block .read-button {
   background: #9e5721;
 }
 #tx-mainbody .post:nth-child(4n+2) .block {
   background: rgba(22, 165, 215, 0.9);
 }
-#tx-mainbody .post:nth-child(4n+2) .block .btn-read {
+#tx-mainbody .post:nth-child(4n+2) .block .read-button {
   background: #0c8097;
 }
 #tx-mainbody .post:nth-child(4n+3) .block {
   background: rgba(18, 178, 74, 0.9);
 }
-#tx-mainbody .post:nth-child(4n+3) .block .btn-read {
+#tx-mainbody .post:nth-child(4n+3) .block .read-button {
   background: #188e3a;
 }
 #tx-mainbody .post:nth-child(4n+4) .block {
   background: rgba(191, 76, 176, 0.9);
 }
-#tx-mainbody .post:nth-child(4n+4) .block .btn-read {
+#tx-mainbody .post:nth-child(4n+4) .block .read-button {
   background: #853575;
+}
+#tx-mainbody .post .read-button {
+  border: 1px solid #dedede;
+  padding: 8px 10px;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: .3s ;
+  -o-transition: .3s ;
+  transition: .3s ;
+}
+#tx-mainbody .post .read-button::after {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  top: 0;
+  left: 0;
+  content: '';
+  -webkit-transition: .3s ;
+  -o-transition: .3s ;
+  transition: .3s ;
+}
+#tx-mainbody .post .read-button:hover:after {
+  width: 100%;
+}
+#tx-mainbody .post .read-button:hover {
+  color: #000;
 }
 #tx-mainbody article.tag-only-post .block {
   background: none!important;
@@ -169,6 +200,10 @@ a:hover {
 #tx-mainbody .post .block .tx-post-meta .tx-post-author {
   margin-right: 100px;
 }
+#tx-mainbody .post .block .tx-post-meta .tx-post-author a {
+  color: #fff;
+  text-transform: capitalize;
+}
 #tx-mainbody .post .block .tx-post-meta .tx-post-time {
   margin-right: 50px;
 }
@@ -182,6 +217,7 @@ a:hover {
 #tx-mainbody .post .block .btn-read {
   border: none;
   border-radius: 0;
+  margin-top: 20px;
 }
 #tx-mainbody .post .block .btn-read:hover {
   text-decoration: underline;
