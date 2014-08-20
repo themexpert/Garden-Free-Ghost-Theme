@@ -464,7 +464,7 @@ a {
             }
             .social .linkedin {
             background: #007FB1;
-}
+            }
 
         }
         .tx-author-img {
@@ -479,3 +479,38 @@ a {
     }
 }
 
+
+
+
+
+// single page header 
+
+.tx-single-page-header {
+    padding: 25px 0;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(32, 16, 1, 0.89);
+    }
+    
+    .nav-pills>li {
+        a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 5px;
+            margin: 0 5px;
+
+            &:hover {
+                background: none;
+            }
+        }
+    }
+}

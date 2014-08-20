@@ -1,0 +1,32 @@
+<section class="tx-single-page-header"  {{#if @blog.cover}}style="background-image: url({{@blog.cover}});background-repeat:no-repeat;background-size:cover;"{{/if}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="logo" href="{{@blog.url}}">
+                    <img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}">
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="menu clearfix">
+                    <ul class="nav nav-pills pull-right">
+                        <li>
+                            <a href="/about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Typography
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
