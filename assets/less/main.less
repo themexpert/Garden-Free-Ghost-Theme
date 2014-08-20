@@ -292,6 +292,11 @@ a {
     }
     .tx-block {
         padding: 30px 0;
+        .poweredby {
+            a {
+                color: #9fbb58;
+            }
+        }
     }
     .social-icon.nav-pills>li {
     	float: none;
@@ -299,12 +304,13 @@ a {
     	a {
     		color: #fff;
     		font-size: 40px;
+            -webkit-transition: .3s all;
+            -o-transition: .3s all;
+            transition: .3s all;
     		&:hover {
     			background: none;
+                color: #9fbb58;
     		}
-            .facebook {
-                color: #49659f;
-            }
     	}
     }
 }
@@ -332,8 +338,18 @@ a {
     .tx-post-meta {
         color: #888;
         font-size: 14px;
-        i {
-            margin-right: 8px;
+        span {
+            margin-right: 12px;
+            i {
+                margin-right: 2px;
+            }
+        }
+        span.tx-post-author {
+            color:#9fbb58 ;
+            a {
+               color:#9fbb58 ; 
+            }
+
         }
     }
     
@@ -349,12 +365,23 @@ a {
             font-weight: bold;
         }
         .media {
+            .thumbnail {
+                width: 150px;
+                img {
+                    width: 100%;
+                }
+            }
             .media-body {
+                .media-heading {
+                    font-weight: bold;
+                    color: #666;
+                }
                 p {
                     margin: 7px 0;
                     font-family: 'Open Sans', sans-serif;
                     font-size: 14px;
-                    line-height: 1.4; 
+                    line-height: 1.4;
+                    color: #888; 
                 }
             }
         }
@@ -432,38 +459,63 @@ a {
                 a {
                     padding:8px 10px;
                     display: block;
-                   i {
-                        color: #fff;    
-                    }
+                    color: #fff;   
+                    -webkit-transition: .2s all;
+                    -o-transition: .2s all;
+                    transition: .2s all;
+                    border: 1px solid transparent;
                 }
             }
 
             .social .facebook {
-            background: #3b5998;
-            padding: 8px 14px;
+                background: #3b5998;
+                padding: 8px 14px;
+                &:hover {
+                   color:  #3b5998;
+                   background: #fff;
+                   border: 1px solid #3b5998;
+                }
             }
 
             .social .twitter {
-            background: #00aced;
-            }
-            .social .facebook {
-            background: #3b5998;
+                background: #00aced;
+                &:hover {
+                   color:  #00aced;
+                   background: #fff;
+                   border: 1px solid #00aced;
+                }
             }
             .social .pinterest {
-            background: #CB2027;
-            }
-
-            .social .flickr {
-            background: #ff0084;
+                background: #CB2027;
+                &:hover {
+                   color:  #CB2027;
+                   background: #fff;
+                   border: 1px solid #CB2027;
+                }
             }
             .social .gplus {
-            background: #D14836;
+                background: #D14836;
+                &:hover {
+                   color:  #D14836;
+                   background: #fff;
+                   border: 1px solid #D14836;
+                }
             }
             .social .dribbble {
-            background: #EA4C89;
+                background: #EA4C89;
+                &:hover {
+                   color:  #EA4C89;
+                   background: #fff;
+                   border: 1px solid #EA4C89;
+                }
             }
             .social .linkedin {
-            background: #007FB1;
+                background: #007FB1;
+                &:hover {
+                   color:  #007FB1;
+                   background: #fff;
+                   border: 1px solid #007FB1;
+                }
             }
 
         }
@@ -488,6 +540,9 @@ a {
 .tx-single-page-header {
     padding: 25px 0;
     position: relative;
+    .logo {
+        display: inline-block;
+    }
     &:before {
         content: "";
         display: block;

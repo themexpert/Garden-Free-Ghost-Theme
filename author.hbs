@@ -9,13 +9,13 @@
                 {{! Everything inside the #author tags pulls data from the author }}
                 {{#author}}    
                     <div class="tx-author-profile clearfix">
-                        <div class="tx-author-img col-md-2">
+                        <div class="tx-author-img col-md-2 col-sm-2">
                             {{#if image}}
                             <img src="{{image}}" alt="{{name}}'s Picture" />
                             {{/if}}
                         </div>
                         
-                        <div class="tx-author-details col-md-10">
+                        <div class="tx-author-details col-md-10 col-sm-10">
                             <h2>{{name}} ({{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}})</h2>
                             <p class="author-bio">{{bio}}</p>
                             <p class="author-meta">
@@ -75,3 +75,6 @@
     {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}}
 </section>
+
+{{! Footer }}
+{{> footer/tx-footer }}

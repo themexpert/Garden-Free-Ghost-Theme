@@ -265,6 +265,9 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
 #tx-footer .tx-block {
   padding: 30px 0;
 }
+#tx-footer .tx-block .poweredby a {
+  color: #9fbb58;
+}
 #tx-footer .social-icon.nav-pills > li {
   float: none;
   display: inline-block;
@@ -272,12 +275,13 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
 #tx-footer .social-icon.nav-pills > li a {
   color: #fff;
   font-size: 40px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
 }
 #tx-footer .social-icon.nav-pills > li a:hover {
   background: none;
-}
-#tx-footer .social-icon.nav-pills > li a .facebook {
-  color: #49659f;
+  color: #9fbb58;
 }
 #tx-top-header {
   padding-bottom: 30px;
@@ -299,8 +303,17 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
   color: #888;
   font-size: 14px;
 }
-#tx-top-header .tx-post-meta i {
-  margin-right: 8px;
+#tx-top-header .tx-post-meta span {
+  margin-right: 12px;
+}
+#tx-top-header .tx-post-meta span i {
+  margin-right: 2px;
+}
+#tx-top-header .tx-post-meta span.tx-post-author {
+  color: #9fbb58 ;
+}
+#tx-top-header .tx-post-meta span.tx-post-author a {
+  color: #9fbb58 ;
 }
 #tx-single-post .tx-author {
   border-top: 1px solid #dedede;
@@ -312,11 +325,22 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
   font-size: 18px;
   font-weight: bold;
 }
+#tx-single-post .tx-author .media .thumbnail {
+  width: 150px;
+}
+#tx-single-post .tx-author .media .thumbnail img {
+  width: 100%;
+}
+#tx-single-post .tx-author .media .media-body .media-heading {
+  font-weight: bold;
+  color: #666;
+}
 #tx-single-post .tx-author .media .media-body p {
   margin: 7px 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.4;
+  color: #888;
 }
 #tx-single-post .tx-author .tx-post-share .tx-post-share-icon {
   font-size: 25px;
@@ -383,34 +407,60 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
 .tx-author-page .tx-author-profile .tx-author-details .social ul li a {
   padding: 8px 10px;
   display: block;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social ul li a i {
   color: #fff;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  border: 1px solid transparent;
 }
 .tx-author-page .tx-author-profile .tx-author-details .social .facebook {
   background: #3b5998;
   padding: 8px 14px;
 }
+.tx-author-page .tx-author-profile .tx-author-details .social .facebook:hover {
+  color: #3b5998;
+  background: #fff;
+  border: 1px solid #3b5998;
+}
 .tx-author-page .tx-author-profile .tx-author-details .social .twitter {
   background: #00aced;
 }
-.tx-author-page .tx-author-profile .tx-author-details .social .facebook {
-  background: #3b5998;
+.tx-author-page .tx-author-profile .tx-author-details .social .twitter:hover {
+  color: #00aced;
+  background: #fff;
+  border: 1px solid #00aced;
 }
 .tx-author-page .tx-author-profile .tx-author-details .social .pinterest {
   background: #CB2027;
 }
-.tx-author-page .tx-author-profile .tx-author-details .social .flickr {
-  background: #ff0084;
+.tx-author-page .tx-author-profile .tx-author-details .social .pinterest:hover {
+  color: #CB2027;
+  background: #fff;
+  border: 1px solid #CB2027;
 }
 .tx-author-page .tx-author-profile .tx-author-details .social .gplus {
   background: #D14836;
 }
+.tx-author-page .tx-author-profile .tx-author-details .social .gplus:hover {
+  color: #D14836;
+  background: #fff;
+  border: 1px solid #D14836;
+}
 .tx-author-page .tx-author-profile .tx-author-details .social .dribbble {
   background: #EA4C89;
 }
+.tx-author-page .tx-author-profile .tx-author-details .social .dribbble:hover {
+  color: #EA4C89;
+  background: #fff;
+  border: 1px solid #EA4C89;
+}
 .tx-author-page .tx-author-profile .tx-author-details .social .linkedin {
   background: #007FB1;
+}
+.tx-author-page .tx-author-profile .tx-author-details .social .linkedin:hover {
+  color: #007FB1;
+  background: #fff;
+  border: 1px solid #007FB1;
 }
 .tx-author-page .tx-author-profile .tx-author-img img {
   border-radius: 100%;
@@ -422,6 +472,9 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
 .tx-single-page-header {
   padding: 25px 0;
   position: relative;
+}
+.tx-single-page-header .logo {
+  display: inline-block;
 }
 .tx-single-page-header:before {
   content: "";
