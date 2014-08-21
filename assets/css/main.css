@@ -497,6 +497,10 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
 .tx-single-page-header .nav-pills > li a:hover {
   background: none;
 }
-.tx-page-title {
-  padding-top: 40px;
+.tx-static-page {
+  padding: 65px 0;
+}
+.tx-static-page .tx-block .tx-post-title {
+  margin-bottom: 50px;
+  margin-top: 0;
 }
