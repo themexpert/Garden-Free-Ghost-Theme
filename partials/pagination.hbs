@@ -18,7 +18,16 @@
                 
             </div>
             
+            {{#if prev}}
+                <a class="older-posts pull-left" href="{{pageUrl prev}}"><i class="fa fa-angle-left"></i>Newer Posts</a>
+            {{/if}}
             
+            <span class="tx-page-number text-center">Page {{page}} of {{pages}}</span>
+            
+            
+            {{#if next}}
+                <a class="newer-posts pull-right" href="{{pageUrl next}}">Older Posts<i class="fa  fa-angle-right"></i></a>
+            {{/if}}
         </div>
     </div>
 </div>

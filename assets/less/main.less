@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 body {
     font-family: 'Open Sans', sans-serif;
    
@@ -172,16 +174,62 @@ a {
                 transition:.3s all;
                 
                 &:hover {
-                    color: rgba(22, 165, 215, 1);
+                    color: #9fbb58;
                 }
             }
-            .tx-post-excerpt p {
-                color: #838383;
+            .tx-post-excerpt{
+                 p {
+                    color: #838383;
+                }
+                .read-button {
+                    border: 1px solid #9e5721;
+                    padding: 8px 10px;
+                    margin-top: 20px;
+                    color: #9e5721;
+                    position: relative;
+                    z-index: 1;
+                    -webkit-transition: .3s ;
+                    -o-transition: .3s ;
+                    transition: .3s ;
+                    display: inline-block;
+                    background:#fff;
+                    &::after {
+                        width: 0;
+                        height: 100%;
+                        position:absolute;
+                        z-index: -1;
+                        background: #9e5721;
+                        top: 0;
+                        left: 0;
+                        content: '';
+                        -webkit-transition: .3s ;
+                        -o-transition: .3s ;
+                        transition: .3s ;
+                    }
+                    &:hover:after {
+                        width: 100%;
+                    }
+                    &:hover {
+                        color: #fff;
+                    }
+
+                }
             }
             .tx-post-meta {
                 color: #9EABB3;
                 .tx-post-tag a {
                     color: #9EABB3;
+                    &:hover {
+                        color: #9fbb58;
+                    }
+                }
+                .tx-post-author {
+                    a {
+                        color:#9EABB3;
+                        &:hover {
+                            color: #9fbb58;
+                        }
+                    }
                 }
             }
         }
@@ -225,7 +273,7 @@ a {
                     }
                 }
                 .tx-post-time {
-                    margin-right: 50px;
+                    margin-right:100px;
                 }
                 .tx-post-tag  {
                     a {
@@ -448,76 +496,6 @@ a {
                     }
                 }
             }
-            .social ul {
-                padding: 15px 0;
-                margin-bottom: 0;
-            }
-
-            .social ul li {
-                list-style: none;
-                display: inline-block;
-                a {
-                    padding:8px 10px;
-                    display: block;
-                    color: #fff;   
-                    -webkit-transition: .2s all;
-                    -o-transition: .2s all;
-                    transition: .2s all;
-                    border: 1px solid transparent;
-                }
-            }
-
-            .social .facebook {
-                background: #3b5998;
-                padding: 8px 14px;
-                &:hover {
-                   color:  #3b5998;
-                   background: #fff;
-                   border: 1px solid #3b5998;
-                }
-            }
-
-            .social .twitter {
-                background: #00aced;
-                &:hover {
-                   color:  #00aced;
-                   background: #fff;
-                   border: 1px solid #00aced;
-                }
-            }
-            .social .pinterest {
-                background: #CB2027;
-                &:hover {
-                   color:  #CB2027;
-                   background: #fff;
-                   border: 1px solid #CB2027;
-                }
-            }
-            .social .gplus {
-                background: #D14836;
-                &:hover {
-                   color:  #D14836;
-                   background: #fff;
-                   border: 1px solid #D14836;
-                }
-            }
-            .social .dribbble {
-                background: #EA4C89;
-                &:hover {
-                   color:  #EA4C89;
-                   background: #fff;
-                   border: 1px solid #EA4C89;
-                }
-            }
-            .social .linkedin {
-                background: #007FB1;
-                &:hover {
-                   color:  #007FB1;
-                   background: #fff;
-                   border: 1px solid #007FB1;
-                }
-            }
-
         }
         .tx-author-img {
             img {

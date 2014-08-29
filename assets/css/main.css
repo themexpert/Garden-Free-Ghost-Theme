@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -153,16 +155,57 @@ article.tag-only-post .block h2 a {
   transition: .3s all;
 }
 article.tag-only-post .block h2 a:hover {
-  color: #16a5d7;
+  color: #9fbb58;
 }
 article.tag-only-post .block .tx-post-excerpt p {
   color: #838383;
+}
+article.tag-only-post .block .tx-post-excerpt .read-button {
+  border: 1px solid #9e5721;
+  padding: 8px 10px;
+  margin-top: 20px;
+  color: #9e5721;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: .3s ;
+  -o-transition: .3s ;
+  transition: .3s ;
+  display: inline-block;
+  background: #fff;
+}
+article.tag-only-post .block .tx-post-excerpt .read-button::after {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #9e5721;
+  top: 0;
+  left: 0;
+  content: '';
+  -webkit-transition: .3s ;
+  -o-transition: .3s ;
+  transition: .3s ;
+}
+article.tag-only-post .block .tx-post-excerpt .read-button:hover:after {
+  width: 100%;
+}
+article.tag-only-post .block .tx-post-excerpt .read-button:hover {
+  color: #fff;
 }
 article.tag-only-post .block .tx-post-meta {
   color: #9EABB3;
 }
 article.tag-only-post .block .tx-post-meta .tx-post-tag a {
   color: #9EABB3;
+}
+article.tag-only-post .block .tx-post-meta .tx-post-tag a:hover {
+  color: #9fbb58;
+}
+article.tag-only-post .block .tx-post-meta .tx-post-author a {
+  color: #9EABB3;
+}
+article.tag-only-post .block .tx-post-meta .tx-post-author a:hover {
+  color: #9fbb58;
 }
 .post {
   position: relative;
@@ -206,7 +249,7 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
   text-transform: capitalize;
 }
 .post .block .tx-post-meta .tx-post-time {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 .post .block .tx-post-meta .tx-post-tag a {
   color: #fff;
@@ -395,72 +438,6 @@ article.tag-only-post .block .tx-post-meta .tx-post-tag a {
 }
 .tx-author-page .tx-author-profile .tx-author-details .author-meta span.website a {
   color: #9fbb58;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social ul {
-  padding: 15px 0;
-  margin-bottom: 0;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social ul li {
-  list-style: none;
-  display: inline-block;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social ul li a {
-  padding: 8px 10px;
-  display: block;
-  color: #fff;
-  -webkit-transition: .2s all;
-  -o-transition: .2s all;
-  transition: .2s all;
-  border: 1px solid transparent;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .facebook {
-  background: #3b5998;
-  padding: 8px 14px;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .facebook:hover {
-  color: #3b5998;
-  background: #fff;
-  border: 1px solid #3b5998;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .twitter {
-  background: #00aced;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .twitter:hover {
-  color: #00aced;
-  background: #fff;
-  border: 1px solid #00aced;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .pinterest {
-  background: #CB2027;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .pinterest:hover {
-  color: #CB2027;
-  background: #fff;
-  border: 1px solid #CB2027;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .gplus {
-  background: #D14836;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .gplus:hover {
-  color: #D14836;
-  background: #fff;
-  border: 1px solid #D14836;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .dribbble {
-  background: #EA4C89;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .dribbble:hover {
-  color: #EA4C89;
-  background: #fff;
-  border: 1px solid #EA4C89;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .linkedin {
-  background: #007FB1;
-}
-.tx-author-page .tx-author-profile .tx-author-details .social .linkedin:hover {
-  color: #007FB1;
-  background: #fff;
-  border: 1px solid #007FB1;
 }
 .tx-author-page .tx-author-profile .tx-author-img img {
   border-radius: 100%;
