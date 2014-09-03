@@ -1,29 +1,20 @@
-# README #
+# Garden Free Responsive Ghost Theme #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Garden is a FREE responsive Ghost Theme. The theme has been shaped with metro ui.Garden Theme is perfectly suitable for personal blogging,review writing,travel blog.However possibilities are endless to your creativity.
 
-### What is this repository for? ###
+### Preview ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+[Demo](http://www.garden.ghost.themexpert.com)
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+##Features
+- Ghost 0.5 Compatible.
+- Bootsrtap Based.
+- Clean Typography focused design.
+- Fully responsive
+- LESS files included.
+- Font Awesome Icons Support.
+- Google Fonts.
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+##Copyright & License
+Copyright (C) 2014 Themexpert - Released under the MIT License.
