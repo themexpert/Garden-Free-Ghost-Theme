@@ -4,7 +4,7 @@ Garden is a FREE responsive Ghost Theme. The theme has been shaped with metro ui
 
 ### Preview ###
 
-[Demo](garden.ghost.themexpert.com)
+[Demo](http://garden.ghost.themexpert.com)
 
 
 ##Features
